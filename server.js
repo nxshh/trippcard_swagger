@@ -17,11 +17,11 @@ app.use(express.urlencoded({ extended: true }));
 
 const userRoutes = require('./routes/userRoutes');
 
-app.use('/api/users', userRoutes);
-app.use('/api/packages', homeRoutes);
-app.use('/api/packages', menuRoutes);
-app.use('/api/gallery', galleryRoutes);
-app.use('/api/packages', verifyRoutes);
+app.use('/users', userRoutes);
+app.use('/pacakges/home', homeRoutes);
+app.use('/packages/menu', menuRoutes);
+app.use('/packages/gallery', galleryRoutes);
+app.use('/packages/verify', verifyRoutes);
 
 swaggerConfig(app);
 
